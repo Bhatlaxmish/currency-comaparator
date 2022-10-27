@@ -1,0 +1,62 @@
+.currency-comparator {
+  padding: 1rem 2.4rem;
+  background-color: #00ffb8;
+}
+.comparator-heading {
+  font-size: 2.5rem;
+  margin-top: 3.2rem;
+  font-weight: 700;
+}
+.comparator-inputs {
+  display: inline-block;
+  margin: 0 1.2rem;
+
+}
+.comparator-select, .comparator-value {
+  font-size: 2.5rem;
+  border: none;
+  color:aliceblue;
+  background-color: #00d0ff;
+
+}
+.comparator-value {
+  width: 7rem;
+}
+.comparator-value:focus,
+.comparator-select:focus {
+  outline-color: var(--site-accent);
+ 
+}
+.inline-btn {
+  padding: 0.4rem 0.8rem;
+  margin-top:4%;
+  margin-left: 30%;
+  font-size: 2.4rem;
+  background-color: #ff00534a;
+
+}
+.tooltip {
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+}
+.tooltip a {
+  text-decoration: none;
+  color: var(--site-accent);
+  font-weight: 600;
+}
+.tooltip a:hover {
+  text-decoration: underline;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+  .comparator-inputs {
+    display: block;
+    margin: 1.2rem 0;
+  }
+  .comparator-value {
+    width: 60vw;
+  }
+  .comparator-heading {
+    margin-top: 1.6rem;
+  }
+}

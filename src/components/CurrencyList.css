@@ -1,0 +1,23 @@
+.currency-list {
+  padding: 0 2.4rem;
+}
+.currency-card-list {
+  margin-top: 3.2rem;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 2.4rem; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  background-color: #3fff0061;
+
+}
+.clear-btn {
+  margin-top: 2.4rem;
+}
+/* Media Queries */
+@media (max-width: 700px) {
+  .currency-card-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

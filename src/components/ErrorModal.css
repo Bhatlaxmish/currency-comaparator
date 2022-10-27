@@ -1,0 +1,46 @@
+.error-modal {
+  width: 70%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: inset 6px 0px 1px var(--site-error);
+  background: #fff;
+  color: var(--site-error);
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* gap: 1.6rem; */
+  z-index: 3;
+}
+.error-content,
+.error-modal-close {
+  padding: 2.4rem;
+}
+.error-modal-close {
+  font-size: 2.4rem;
+  background-color: var(--site-error);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-backdrop {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.4rem);
+}
+/* Media Queries */
+@media (max-width: 600px) {
+  .error-modal {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+}

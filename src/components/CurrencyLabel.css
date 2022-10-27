@@ -1,0 +1,27 @@
+.currency-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 5%;
+  cursor: pointer;
+
+}
+
+.currency-label:hover {
+  background: #fff;
+  color: #000;
+}
+
+.currency-label.valid {
+  background: var(--valid-highlight);
+  color: rgb(54, 162, 18);
+}
+.currency-label.invalid {
+  background: var(--invalid-highlight);
+  color: #fff;
+}
+.currency-label.valid svg,
+.currency-label.invalid svg {
+  stroke: rgb(87, 172, 205);
+  fill: rgb(156, 163, 29);
+}
